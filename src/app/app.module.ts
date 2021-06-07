@@ -10,11 +10,14 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireAnalyticsModule } from '@angular/fire/analytics';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
+import { LoginComponent } from './components/login/login.component';
 
 import {MatButtonModule} from '@angular/material/button';
-import { LoginComponent } from './components/login/login.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +35,8 @@ import { LoginComponent } from './components/login/login.component';
     AngularFireAnalyticsModule,
     BrowserAnimationsModule,
     //material imports start here 
-    MatButtonModule 
+    MatButtonModule ,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
