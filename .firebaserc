@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "ayus-ayurveda": {
+      "hosting": {
+        "ayus-admin-portal": [
+          "ayus-ayurveda"
+        ]
+      }
+    }
+  }
+}

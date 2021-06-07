@@ -116,9 +116,16 @@
               "devServerTarget": "ayus-admin-portal:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }
   },
-  "defaultProject": "ayus-admin-portal"
+  "defaultProject": "ayus-admin-portal",
+  "cli": {
+    "analytics": "30af26d4-3e6c-408b-9578-2051f25902dd"
+  }
 }
