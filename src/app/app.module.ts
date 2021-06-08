@@ -14,9 +14,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
+import { AppoinmentService } from './services/appoinment.service';
 
 import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatTableModule} from '@angular/material/table';
+import { MessagesComponent } from './components/messages/messages.component';
+import { AppoinmentComponent } from './components/appoinment/appoinment.component'
+
 
 
 @NgModule({
@@ -24,7 +29,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppComponent,
     DashboardComponent,
     HeaderComponent,
-    LoginComponent
+    LoginComponent,
+    MessagesComponent,
+    AppoinmentComponent
   ],
   imports: [
     BrowserModule,
@@ -36,9 +43,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     BrowserAnimationsModule,
     //material imports start here 
     MatButtonModule ,
-    MatToolbarModule
+    MatToolbarModule,
+    MatTableModule
   ],
-  providers: [],
+  providers: [AppoinmentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

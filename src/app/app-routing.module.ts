@@ -1,3 +1,5 @@
+import { AppoinmentComponent } from './components/appoinment/appoinment.component';
+import { MessagesComponent } from './components/messages/messages.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -11,6 +13,14 @@ const routes: Routes = [
 {
   path: 'dash-board',
   component : DashboardComponent
+},
+{
+  path: 'messages',
+  component : MessagesComponent
+},
+{
+  path: 'appoinment',
+  component : AppoinmentComponent
 }
 
 ];
